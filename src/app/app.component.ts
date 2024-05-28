@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'courses';
+  
+  viewCourses:boolean = true
+
+  handleTable(){
+    this.viewCourses = !this.viewCourses
+  }
 }

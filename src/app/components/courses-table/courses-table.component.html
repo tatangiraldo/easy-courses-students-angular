@@ -1,0 +1,17 @@
+<h1>Courses</h1>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Course Name</th>
+        <th scope="col">Difficult</th>
+        <th scope="col">Rquired</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{course.name}}</td>
+        <td>{{course.difficult}}</td>
+        <td>{{course.required}}</td>
+      </tr>
+    </tbody>
+  </table>
